@@ -1,19 +1,33 @@
+# G:\Project\hongchaoai\frontend\.gitignore
+
+# macOS 系统文件
 .DS_Store
+
+# Node.js 相关
 node_modules
 /dist
+npm
+vue-cli-service
+hongchaoai_frontend@0.1.0
 
+# chat-ui 子项目相关（如果不需要提交）
+chat-ui/node_modules
+chat-ui/dist
 
-# local env files
+# 本地环境文件
+.env
 .env.local
 .env.*.local
+.envBAK.env
+*- Copy.env
 
-# Log files
+# 日志文件
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Editor directories and files
+# 编辑器相关
 .idea
 .vscode
 *.suo
@@ -21,3 +35,26 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# 备份文件
+*BAK*
+*.bak
+nginxBAK.conf
+src/router/*Copy*
+public/indexbak.html
+src/AppBAK.vue
+src/mainBAK.js
+
+# Docker 镜像文件
+*.tar
+
+# 其他临时文件和乱码文件
+frontend\347\233\256\345\275\225\347\273\223\346\236\204.txt
+src/App\345\276\256\344\277\241\347\252\227\345\217\243\345\236\213.vue
+src/api\345\211\215\347\253\257\344\274\230\345\214\226.js
+src/socket - \345\211\257\346\234\254.js
+src/views/Analytics - \345\211\257\346\234\254.vue
+
+# 临时图片文件（如果不需要提交）
+public/logo.png
+public/new-logo.png
